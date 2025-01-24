@@ -1,41 +1,63 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 body{
-    background-color: #f5cd69d2;
+    background-color: #ffffff;
+
 }
+
 header nav{
     display: flex;
+    justify-content: space-around;/*pega todo o espaço que sobrar na linha e distribui igualmente entre os elementos, deixando o spaço igual em toda a linha*/
+    align-items: center;
+    padding: 0px 310px 0px 0px;
+    gap: 430px;
+    background-color: rgba(0, 0, 0, 0.863);
 }
 .logo{
     text-decoration: none;
-}
-.logo img{
-    height: 150px;
+    display: flex;
+    
 }
 .logo h1{
-    font-weight:bolder;
-    color: black;
+    
+    color: rgba(255, 255, 255, 0.815);
     cursor: pointer;
     font-size: 43px;
+    font-family: "Oleo Script", serif;
 }
 
 .menu{
     list-style: none;
     display: flex;
-    gap: 20px; /*espaço entre os menus*/
+    gap: 30px; /*espaço entre os menus*/
+    
 }
 .menu li a{
 text-decoration: none; 
-color:#8b4706 ;
-padding: 0px;      /*para aumentar o background com cor*/
+color:rgba(255, 255, 255, 0.815) ;
+padding: 8px;      /*para aumentar o background com cor*/
 border-radius: 8px; /*formata a borda do background de fundo*/
 font-weight:bold; 
 font-size: 25px; /*tamanho dos menu*/
+font-family: "Playfair Display", serif;
+border-radius: 8px;
+}
+.menu li a:hover{
+    background-color: white;
+    color: black;
 }
 
 
 .perfil{ /*edita o icone perfil*/
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 45px; /*aumenta o tamanho do icone*/
+    /*serve pra deixar o icone de perfil mais pra direita do site*/
+    padding: 3px 5px 0px 3px;
+    border-radius: 50px;
+}
+.perfil:hover{
+    background-color: white;
     color: black;
-    font-size: 45px; 
 }
