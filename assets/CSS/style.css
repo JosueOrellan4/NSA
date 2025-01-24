@@ -1,0 +1,41 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+body{
+    background-color: #f5cd69d2;
+}
+header nav{
+    display: flex;
+}
+.logo{
+    text-decoration: none;
+}
+.logo img{
+    height: 150px;
+}
+.logo h1{
+    font-weight:bolder;
+    color: black;
+    cursor: pointer;
+    font-size: 43px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px; /*espaço entre os menus*/
+}
+.menu li a{
+text-decoration: none; 
+color:#8b4706 ;
+padding: 0px;      /*para aumentar o background com cor*/
+border-radius: 8px; /*formata a borda do background de fundo*/
+font-weight:bold; 
+font-size: 25px; /*tamanho dos menu*/
+}
+
+
+.perfil{ /*edita o icone perfil*/
+    color: black;
+    font-size: 45px; 
+}
