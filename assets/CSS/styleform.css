@@ -1,5 +1,10 @@
-.container-Feedback{
+.container{
     display: flex;
-        flex-direction: column
-        ;
+}
+
+.container-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
 }

@@ -131,7 +131,7 @@ color: #996743;
     margin:0 auto;
     width: 100%;
     max-width: 1200px; /* limita apenas o conteúdo interno da <section>, mas não afeta a largura total da <section> em si.*/
-    text-align: center; /* Centraliza o título (h2)*/
+    text-align: center; 
     
 }
 .cards-container{
