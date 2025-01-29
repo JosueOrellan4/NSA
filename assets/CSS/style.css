@@ -2,10 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body{
     background-color: #ffffff;
 
 }
+
 
 
 header nav{
@@ -15,6 +25,7 @@ header nav{
     align-items: center;
     padding: 20px 0;
     background-color: rgba(0, 0, 0, 0.863);
+    
 }
 .logo{
     text-decoration: none;
@@ -65,5 +76,54 @@ border-radius: 8px;
 
 
 #banner img{
+    
     width: 100%;
+}
+h2{
+    margin: 0;
+    padding-bottom: 10px;
+}
+#cards{
+    margin: 0;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: 2s ease-in-out;
+    gap: 30px;
+    padding: 10px 20px;
+}
+.card{
+    width: 100%;
+    background:tomato;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.card img{
+   
+    width: 100%; /*100 da tela do card*/
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h4{
+    margin-top: 15px;
+    font-size: 22px;
+    color: #333;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #cards {
+        grid-template-columns: 1fr;
+    }
 }
