@@ -52,7 +52,7 @@ color:rgba(255, 255, 255, 0.815) ;
 padding: 8px;      /*para aumentar o background com cor*/
 border-radius: 8px; /*formata a borda do background de fundo*/
 font-weight:bold; 
-font-size: 25px; /*tamanho dos menu*/
+font-size: 20px; /*tamanho dos menu*/
 font-family: "Playfair Display", serif;
 border-radius: 8px;
 }
@@ -74,56 +74,133 @@ border-radius: 8px;
     color: black;
 }
 
-
 #banner img{
     
     width: 100%;
-}
-h2{
-    margin: 0;
-    padding-bottom: 10px;
-}
-#cards{
-    margin: 0;
-    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;/*A imagem deixa de ser inline e passa a ocupar 100% da largura disponível e resolve o espaço em branco que tinha lgoo abaixo*/
     
+}
+main{background-color: rgb(228, 203, 171);}
+
+
+    
+    
+
+.sobre-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    transition: 2s ease-in-out; /*usada pra criar uma animação suave quando a mudança em uma propriedade de estilo*/
+    padding: 10px; 
+    gap: 20px;
+    height: auto;
+    
+    
+}
+
+.sobre-container img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    height: auto;
+    
+}
+
+.sobre-container h2{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.815);
+    font-family: "Playfair Display", serif;
+    margin-bottom: 20px;/*espaço abaixo do titulo*/
+
+}
+.sobre-container p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.815);
+    line-height: 1.8; /*Espaço entre as linhas*/
+}
+
+h3{
+font-size: 30px;
+font-family: "Playfair Display", serif;
+color: #996743;
+}
+
+#cards {
+    margin:0 auto;
+    width: 100%;
+    max-width: 1200px; /* limita apenas o conteúdo interno da <section>, mas não afeta a largura total da <section> em si.*/
+    text-align: center; /* Centraliza o título (h2)*/
+    
+}
+.cards-container{
+    margin: 0; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*faz com que eles fiquem em coluna e cada um ocupe 1 fração de espaço*/
     transition: 2s ease-in-out;
-    gap: 30px;
+    gap: 100px;
     padding: 10px 20px;
+    
+        
 }
 .card{
     width: 100%;
-    background:tomato;
+    background-color: #996743;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
     text-align: left;
+   
+   padding: 15px;
 }
 
 .card img{
    
     width: 100%; /*100 da tela do card*/
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /*faz com que a imagem do conteudo preencher todo o containar mas vai cortar algumas partes da imagem*/
     border-radius: 10px;
+    
 }
 
-.card h4{
+.card h5{
     margin-top: 15px;
     font-size: 22px;
-    color: #333;
+    color: #000000;
 }
-.card p{
+.card p{ 
     margin-top: 10px;
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    #cards {
+h4{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.815);
+    font-family: "Playfair Display", serif;
+    margin-bottom: 20px;/*espaço abaixo do titulo*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {/*quando a tela do dispositivo for 600 px vai fazer com que os item fique em uma coluna*/
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    .sobre-container{
         grid-template-columns: 1fr;
     }
 }
