@@ -1,10 +1,81 @@
-.container{
+#feedback{
     display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+    
 }
 
-.container-formulario{
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /*aumentar espaço entre o form e mapa.*/
+    margin-bottom: 50px; /*usei pra dar espaço abaixo do section form*/
+    max-width: 1200px;
+    
+}
+
+.container-formulario form{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+    
+    
+}
+
+input{
+    height: 35px;
+    border-radius: 20px;
+    
+}
+textarea{
+    height: 190px;
+    border-radius: 20px;
+}
+#telefone{
+    width: 320px;
+
+}
+button{
+    height: 30px;
+    background-color: #0056b3;
+    color: white;
+    
+}
+
+.container-mapa iframe{
+    width: 100%;
+    max-width: 450px;
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+        ;
+    }
+    .container-formulario form {
+        width: 100%; /* Ajusta o formulário para a largura completa */
+        max-width: 100%; /* Não limita a largura do formulário */
+    }
+
+    .container-mapa iframe {
+        width: 100%; /* Faz o mapa ocupar 100% da largura disponível */
+        max-width: 100%; /* Ajusta o mapa para a largura completa */
+    }
+    #telefone{
+        width: 100%;
+        margin-bottom: 15px;
+        
+    }
+    #email{
+        width: 100%;
+    }
     
 }

@@ -29,8 +29,6 @@ header nav{
 }
 .logo{
     text-decoration: none;
-    display: flex;
-    
 }
 .logo h1{
     
@@ -38,6 +36,8 @@ header nav{
     cursor: pointer;
     font-size: 43px;
     font-family: "Oleo Script", serif;
+    text-decoration: none;
+    
 }
 
 .menu{
